@@ -29,10 +29,15 @@ class Cpf extends AbstractValidator
         $cpf = str_replace("/", "", $cpf);
         $cpf = str_replace("-", "", $cpf);
         $cpf = str_replace(".", "", $cpf);
-        $this->isFictitious($cpf);
         $this->checkSize($cpf);
+
+        if($this->getMessages() != []){
+            return false;
+        }
+
         $this->checkDigitOne($cpf);
         $this->checkDigitTwo($cpf);
+        $this->isFictitious($cpf);
 
 
         if($this->getMessages()==[]) {

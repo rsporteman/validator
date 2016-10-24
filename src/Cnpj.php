@@ -31,6 +31,11 @@ class Cnpj extends AbstractValidator
         $cnpj = str_replace("-", "", $cnpj);
         $cnpj = str_replace(".", "", $cnpj);
         $this->checkSize($cnpj);
+
+        if($this->getMessages() != []){
+            return false;
+        }
+
         $this->checkDigitOne($cnpj);
         $this->checkDigitTwo($cnpj);
         $this->isFictitious($cnpj);
