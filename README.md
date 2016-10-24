@@ -10,7 +10,7 @@ Code for cpf and a cnpj validator, use like zendframework 2 and 3 validators.
 $  composer require rsporteman/validator
 ```
 
-Example:
+## Example
 
 ```php
 <?php
