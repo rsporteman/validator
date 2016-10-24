@@ -1,0 +1,29 @@
+{
+    "name": "rsporteman/validator",
+    "description": "provides a set of commonly needed validators",
+    "license": "MIT License",
+    "keywords": [
+        "rsporteman",
+        "validator"
+    ],
+    "homepage": "https://github.com/rsporteman/validator",
+    "autoload": {
+        "psr-4": {
+            "rsporteman\\Validator\\": "src/"
+        }
+    },
+    "require": {
+        "php":"^5.5 || ^7.0",
+        "zendframework/zend-validator":"^2.7"
+    },
+    "require-dev": {
+        "phpunit/PHPUnit":"^5.0"
+    },
+    "minimum-stability":"dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "rsporteman\\ValidatorTest\\": "test/src/"
+        }
+    }
+}
