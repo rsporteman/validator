@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Code for cpf and a cnpj validation, use like zendframework 2 and 3 validators. 
+Code for cpf and a cnpj validation, use like Laminas validators. 
 
 ## Installation using Composer
 
@@ -37,4 +37,17 @@ $errorCpfMsg = $validatorCnpj->getMessages();
 var_dump($errorCpfMsg);// output: ['cnpjLength' => string 'The input contains an invalid amount of characters']
 
 
+```
+
+Ambience and Tests
+
+```bash
+#up docker container
+docker-compose up 
+
+#enter on container
+docker exec -it rsporteman-validator bash
+
+#run tests
+vendor/bin/phpunit test
 ```

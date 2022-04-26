@@ -1,7 +1,7 @@
 <?php
 namespace rsporteman\Validator;
 
-use Zend\Validator\AbstractValidator;
+use Laminas\Validator\AbstractValidator;
 
 class Cpf extends AbstractValidator
 {
