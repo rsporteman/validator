@@ -1,7 +1,8 @@
 {
     "name": "rsporteman/validator",
+    "type": "library",
     "description": "provides a set of commonly needed validators",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [
         {
             "name": "Raoni Sporteman"
