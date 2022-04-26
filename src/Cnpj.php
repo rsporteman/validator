@@ -2,7 +2,7 @@
 
 namespace rsporteman\Validator;
 
-use Zend\Validator\AbstractValidator;
+use Laminas\Validator\AbstractValidator;
 
 class Cnpj extends AbstractValidator
 {
