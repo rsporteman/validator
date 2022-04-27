@@ -36,7 +36,7 @@
     "scripts": {
         "test:coverage": [
             "@putenv XDEBUG_MODE=coverage",
-            "vendor/bin/phpunit --color=always --coverage-clover=\".phpunit.cache/clover.xml\""
+            "vendor/bin/phpunit --color=always --coverage-clover=\"clover.xml\""
         ],
         "test:coverage-html": [
             "@putenv XDEBUG_MODE=coverage",
