@@ -1,7 +1,0 @@
-<phpunit colors="true" backupGlobals="false" bootstrap="./Bootstrap.php">
-    <testsuites>
-        <testsuite name="rsporteman\Validators">
-            <directory>./src/</directory>
-        </testsuite>
-    </testsuites>
-</phpunit>

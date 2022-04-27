@@ -2,3 +2,9 @@ vendor/
 composer.lock
 /.idea
 /.vscode
+.local
+/tmp
+.phpunit.result.cache
+/.phpunit.cache
+.tool-versions
+codecov

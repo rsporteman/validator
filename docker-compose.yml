@@ -3,8 +3,15 @@ services:
 
   # PHP service
   app:
-    build: ./.docker/
-    container_name: rsporteman-validator
-    working_dir: /var/www/
     volumes:
       - ./:/var/www
+    working_dir: /var/www/
+    build: ./.docker/
+    entrypoint: /var/www/.docker/entrypoint.sh
+    container_name: rsporteman-validator
+    networks:
+      - rsporteman
+
+networks:
+  rsporteman:
+    driver: bridge

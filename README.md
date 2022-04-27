@@ -48,6 +48,13 @@ docker-compose up
 #enter on container
 docker exec -it rsporteman-validator bash
 
+#install dependencies
+composer install
+
 #run tests
-vendor/bin/phpunit test
+vendor/bin/phpunit 
+
+#generate coverage, files will be generate inside .phpunit.cache
+composer test:coverage
+composer test:coverage-html 
 ```
