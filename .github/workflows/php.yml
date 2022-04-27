@@ -17,6 +17,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: codecov/codecov-action@v2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+        files: ./coverage1.xml,./coverage2.xml # optional
+        flags: unittests # optional
+        name: codecov-umbrella # optional
+        fail_ci_if_error: true # optional (default = false)
+        verbose: true # optional (default = false)
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -32,15 +39,7 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
-      
-    with:
-      token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-      files: ./coverage1.xml,./coverage2.xml # optional
-      flags: unittests # optional
-      name: codecov-umbrella # optional
-      fail_ci_if_error: true # optional (default = false)
-      verbose: true # optional (default = false)
-
+    
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
