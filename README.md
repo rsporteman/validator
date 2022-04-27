@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![codecov](https://codecov.io/gh/rsporteman/validator/branch/master/graph/badge.svg?token=1NT6RT49OK)](https://codecov.io/gh/rsporteman/validator)
+
 # rsporteman/validator
 
 ## Introduction
